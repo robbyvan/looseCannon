@@ -26,4 +26,5 @@ class Solution(object):
     :type D: List[int]
     :rtype: int
     """
-    
+    AB = collections.Counter(a + b for a in A for b in B)
+    return sum(AB[-c-d] for c in C for d in D)
