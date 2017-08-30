@@ -1,5 +1,6 @@
 # Given inorder and postorder traversal of a tree, construct the binary tree.
 
+
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -7,7 +8,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+class Solution(object):
   def buildTree(self, inorder, postorder):
     """
     :type inorder: List[int]
