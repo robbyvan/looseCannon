@@ -1,4 +1,10 @@
 class Solution(object):
   def canJump(self, nums):
-    for index in xrange(len(nums) - 1, 0, -1):
-      
+    maxRange = 0
+    pos = 0
+    for item in nums:
+      if pos > maxRange:
+        return False
+      maxRange = max(maxRange, pos + item)
+      pos += 1
+    return True
